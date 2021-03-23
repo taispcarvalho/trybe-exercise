@@ -1,0 +1,28 @@
+div:hover {
+    border: solid;
+    border-color: black;
+}
+
+#um {
+    color: magenta;
+}
+
+#dois {
+    color: blue;
+}
+
+#tres {
+    color: yellow;
+}
+
+#quatro {
+    color: darkgreen;
+}
+
+#cinco {
+    color: lightgreen;
+}
+
+h3 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
