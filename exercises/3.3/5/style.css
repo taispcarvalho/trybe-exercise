@@ -1,0 +1,56 @@
+.lista_ol{
+    background-color: yellow;
+}
+
+.par {
+    color: green;
+}
+
+.primo {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.azul {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+ul.pessoa_des li:hover {
+    font-weight: bold;
+}
+
+#SO:hover {
+    color: orange;
+}
+
+#W3S:hover, #trybe:hover {
+    color: green;
+}
+
+#MDN:hover {
+    color: black;
+}
+
+#DD:hover {
+    color: yellow;
+}
