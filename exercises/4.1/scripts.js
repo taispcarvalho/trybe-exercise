@@ -1,4 +1,4 @@
-const name = "Tais";
+const name = "Tais Carvalho";
 const birthCity = "Belo Horizonte";
 
 let birthYear = 1994;
