@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    // 1
+      const h1 = document.createElement('h1');
+      h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+      h1.className = 'title';
+      document.body.appendChild(h1);
+
+    // 2 
+      const divMain = document.createElement('div');
+      divMain.className = 'main-content';
+      document.body.appendChild(divMain);
+    
+    // 3
+      const divCenter = document.createElement('div');
+      divCenter.className = 'center-content';
+      divMain.appendChild(divCenter);
+      divMain.style.backgroundColor = 'green';
+
+    // 4
+      const paragraph = document.createElement('p');
+      paragraph.innerText = 'legal demais da conta';
+      divCenter.appendChild(paragraph);  
+
+    // 5
+      const divLeft = document.createElement('div');
+      divLeft.className = 'left-content';
+      divMain.appendChild(divLeft);  
+
+    // 6
+      const divRight = document.createElement('div');
+      divRight.className = 'right-content';
+      divMain.appendChild(divRight);
+      divRight.style.marginRight = 'auto';
+      
+    // 7
+      const image = document.createElement('img');
+      image.className = 'small-image';
+      image.src = 'https://picsum.photos/200';
+      divLeft.appendChild(image);
+
+    // 8
+      const numberList = document.createElement('ul');
+      divRight.appendChild(numberList);  
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let numbers in arrayNumbers) {
+          newNumberList = document.createElement('li');
+          newNumberList.innerHTML = arrayNumbers[numbers];
+          numberList.appendChild(newNumberList);
+      }   
+
+    // 9  
+    for (let i = 0; i < 3; i++) {
+        let h3 = document.createElement('h3');
+        divMain.appendChild(h3);
+        h3.innerHTML = "sera que deu";
+        h3.className = 'description';
+    }
+
+    divMain.removeChild(divLeft)
+
+    newNumberList.lastChild.remove();
+    newNumberList.lastChild.remove();
+   
+    
+
+    </script>
+  </body>
+</html>
