@@ -21,7 +21,8 @@ testingScope(true);
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 const inOder = (a, b) => a - b;
+const rightOrder = oddsAndEvens.sort(inOder);
 
-console.log(oddsAndEvens.sort(inOder));
+console.log(`Os números ${rightOrder} se encontram ordenados de forma crescente!`);
 
 
